@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     const endpoint = '/user';
     const method = 'get';
-    const URL = `http://localhost:5000${endpoint}`;
+    const URL = `https://limitless-ravine-59645.herokuapp.com${endpoint}`;
     let d = axios({
       method,
       url: URL        
@@ -55,7 +55,7 @@ function App() {
         name: searchInput,
         email: searchInput
       }
-      const URL = `http://localhost:5000${endpoint}?name=${searchInput}&email=${searchInput}`;
+      const URL = `https://limitless-ravine-59645.herokuapp.com${endpoint}?name=${searchInput}&email=${searchInput}`;
       let d = axios({
         method,
         url: URL    
